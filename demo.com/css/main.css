@@ -1,3 +1,213 @@
 body{
-	background-color: white;
+	/*background-color: white;*/
+	font-family: roboto;
+}
+
+/*bannar選單的顏色和長寬*/
+nav{
+	background-color: #021426;
+	width: 1903px;
+	height: 70px;
+}
+
+/*bannar選單的字顏色等*/
+a{
+	line-height: 5;
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-left: 20px;
+	/*把選單的字往上移往右移*/
+	position: relative;
+	top: -15px;
+	left: 40px;
+}
+
+/*hover就是游標移到字上面的感應變色*/
+a:hover{
+	color: yellow;
+}
+
+/*active標籤的顏色*/
+a.active{
+	color: lime;
+}
+
+/*把logo往中間移動一點*/
+img#logo{
+	margin-left: 405px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+
+/*slide show大圖底色*/
+img#slideshow{
+	border-bottom: 10px solid #021426;
+	width: 1903px;
+}
+
+
+/*	Home page content
+ 調整主文邊距 */
+section#paragraph{
+	margin: 100px;
+}
+
+
+/* service page*/
+/*service大字*/
+h1#page-title{
+	margin-left: 400px;
+	color: #021426;
+}
+
+img#services-slideshow{
+	margin-left: 400px;
+	width: 67%;
+}
+
+section#services-paragraph{
+/*要先margin之後margin-left才有效果!*/
+	margin: 100px;
+	margin-left: 400px;
+}
+
+
+/*portfolio page*/
+
+img#project1-img, img#project2-img,img#project3-img{
+	margin-left: 400px;
+}
+
+/*不管哪個page,只要同名tag中的同名物件均會被css中同名定義影響!
+例如下面div#project1定義會同時套用影響到protfolio和about中的div#project1*/
+div#project1{
+	margin-left: 1201px;
+	position: absolute;
+	top: 121px;
+	left: 0px;
+	width: 466px;
+}
+
+a.project1-button{
+	width: 100px;
+	height: 60px;
+	background: #c51a2a;
+	padding: 20px;
+	position: relative;
+	top: 4px;
+	left: -21px;
+}
+
+
+div#project2{
+	margin-left: 1201px;
+	position: absolute;
+	top: 515px;
+	left: 0px;
+	width: 466px;
+}
+
+a.project2-button{
+	width: 100px;
+	height: 60px;
+	background: #c51a1a;
+	padding: 20px;
+	position: relative;
+	top: 4px;
+	left: -21px;
+}
+
+section#project2, section#project3{
+	margin-top: 50px;
+}
+
+div#project3{
+	margin-left: 1201px;
+	position: absolute;
+	top: 903px;
+	left: 0px;
+	width: 466px;
+}
+
+a.project3-button{
+	width: 100px;
+	height: 60px;
+	background: #c51a2a;
+	padding: 20px;
+	position: relative;
+	top: 4px;
+	left: -21px;
+}
+
+
+/*about page*/
+img#about-slideshow{
+	margin-left: 400px;
+
+
+}
+
+
+/*contact page*/
+form{
+	margin-left: 400px;
+}
+/*輸入框設定*/
+.form-control{
+	display: block;
+	width: 40%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15% ease-in-out, box-shadow .15% ease-in-out;
+}
+
+
+/*submit 按鈕設計*/
+.btn-primary{
+	color: white;
+	background-color: #007bff;
+	border-color: #007bff;
+
+}
+
+.btn-primary:hover{
+	color: white;
+	background-color: blue;
+	border-color: blue;
+}
+
+.btn{
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .95rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/*網頁最底部的色塊*/
+footer{
+	margin-top: 200px;
+	background: #021426;
+	width: 100%;
+	height: 215px;
+	color: white;
+
+}
+
+/*把footer往中間移*/
+p#footer-text{
+	line-height: 15;
+	text-align: center;
 }
